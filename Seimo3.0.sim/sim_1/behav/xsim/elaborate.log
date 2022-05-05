@@ -1,0 +1,31 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63348537538a4e70ac9a5bbb19b7b29a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mainTest_behav xil_defaultlib.mainTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:116]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:117]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:118]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:119]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:120]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port condition_decimal [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:121]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockDivider(n=2)
+Compiling module xil_defaultlib.clockDivider(n=1)
+Compiling module xil_defaultlib.clockDivider(n=20000000)
+Compiling module xil_defaultlib.welcomeWelcome
+Compiling module xil_defaultlib.increaseNum
+Compiling module xil_defaultlib.operate
+Compiling module xil_defaultlib.separateResult
+Compiling module xil_defaultlib.BCD_converter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.showTime
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.mainTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mainTest_behav

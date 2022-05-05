@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/BCD_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/increaseNum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module increaseNum
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/operate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module operate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module separateResult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/showTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module showTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/welcomeWelcome.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module welcomeWelcome
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sim_1/new/mainTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mainTest

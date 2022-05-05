@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun May  1 22:32:27 2022
+| Host         : LAPTOP-207FS7HN running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7vx485t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |            1 |
+|     14 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             186 |           24 |
+| Yes          | No                    | No                     |              16 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             148 |           27 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------------+------------------------------------------+------------------+----------------+
+|      Clock Signal     |        Enable Signal        |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-----------------------+-----------------------------+------------------------------------------+------------------+----------------+
+|  clk_100_IBUF_BUFG    | op/result[0]_i_2_n_0        | ones1/SR[0]                              |                1 |              2 |
+|  Ckleeko1/CLK         |                             |                                          |                2 |              4 |
+|  Ckleeko1/CLK         | show_enable_master_OBUF     | nolabel_line123/enable_anodes[3]_i_1_n_0 |                2 |              8 |
+|  clk_100_IBUF_BUFG    |                             |                                          |                4 |             14 |
+|  Ckleeko1/CLK         | show_enable_master_OBUF     |                                          |                6 |             16 |
+|  clk_100_IBUF_BUFG    | op/E[0]                     | ones1/SR[1]                              |                4 |             26 |
+|  clk_debounce_BUFG    | ones2/number[13]_i_2__1_n_0 | ones2/number[13]_i_1__1_n_0              |                5 |             28 |
+|  clk_debounce_BUFG    | tens1/number[13]_i_2__0_n_0 | tens1/number[13]_i_1__0_n_0              |                5 |             28 |
+|  clk_debounce_BUFG    | tens2/number[13]_i_2__2_n_0 | tens2/number[13]_i_1__2_n_0              |                5 |             28 |
+|  clk_debounce_BUFG    | ones1/number[13]_i_2_n_0    | ones1/number[13]_i_1_n_0                 |                5 |             28 |
+|  Ckleeko3/clk_welcome |                             |                                          |                3 |             30 |
+|  clk_100_IBUF_BUFG    |                             | Ckleeko1/new_clk                         |                8 |             62 |
+|  clk_100_IBUF_BUFG    |                             | Ckleeko2/new_clk                         |                8 |             62 |
+|  clk_100_IBUF_BUFG    |                             | Ckleeko3/new_clk                         |                8 |             62 |
++-----------------------+-----------------------------+------------------------------------------+------------------+----------------+
+
+

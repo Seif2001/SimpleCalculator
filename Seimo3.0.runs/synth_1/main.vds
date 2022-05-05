@@ -1,0 +1,527 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun May  1 22:26:15 2022
+# Process ID: 20456
+# Current directory: C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.runs/synth_1/main.vds
+# Journal file: C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 327.160 ; gain = 97.770
+Command: synth_design -top main -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 435.836 ; gain = 96.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:45]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:109]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v:23]
+	Parameter n bound to: 1000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider' (1#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider__parameterized0' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v:23]
+	Parameter n bound to: 10000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider__parameterized0' (1#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider__parameterized1' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v:23]
+	Parameter n bound to: 20000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider__parameterized1' (1#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/clockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'welcomeWelcome' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/welcomeWelcome.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'welcomeWelcome' (2#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/welcomeWelcome.v:25]
+INFO: [Synth 8-6157] synthesizing module 'increaseNum' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/increaseNum.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'increaseNum' (3#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/increaseNum.v:24]
+INFO: [Synth 8-6157] synthesizing module 'operate' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/operate.v:26]
+WARNING: [Synth 8-6014] Unused sequential element rem_reg was removed.  [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/operate.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'operate' (4#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/operate.v:26]
+INFO: [Synth 8-6157] synthesizing module 'separateResult' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v:24]
+WARNING: [Synth 8-6090] variable 'num' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v:45]
+WARNING: [Synth 8-6090] variable 'num' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v:47]
+WARNING: [Synth 8-6090] variable 'num' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v:49]
+WARNING: [Synth 8-567] referenced signal 'input_num' should be on the sensitivity list [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'separateResult' (5#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/separateResult.v:24]
+INFO: [Synth 8-6157] synthesizing module 'BCD_converter' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/BCD_converter.v:24]
+WARNING: [Synth 8-567] referenced signal 'condition_negative' should be on the sensitivity list [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/BCD_converter.v:31]
+WARNING: [Synth 8-567] referenced signal 'condition_decimal' should be on the sensitivity list [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/BCD_converter.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_converter' (6#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/BCD_converter.v:24]
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/display.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'display' (7#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/display.v:26]
+INFO: [Synth 8-6157] synthesizing module 'showTime' [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/showTime.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'showTime' (8#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/showTime.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'main' (9#1) [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/main.v:45]
+WARNING: [Synth 8-3331] design separateResult has unconnected port clock
+WARNING: [Synth 8-3331] design welcomeWelcome has unconnected port enable_master
+WARNING: [Synth 8-3331] design welcomeWelcome has unconnected port welcome_screen_switch
+WARNING: [Synth 8-3331] design welcomeWelcome has unconnected port display_result_switch
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 491.305 ; gain = 151.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 491.305 ; gain = 151.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 491.305 ; gain = 151.867
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:3]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:7]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:9]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:11]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:13]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:15]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:17]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:19]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:21]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:25]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:27]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:29]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:31]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:33]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:35]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:37]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:39]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:43]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:45]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:47]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:49]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:51]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:55]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:57]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:59]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:61]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:64]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:66]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:68]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:70]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:72]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:74]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:76]
+CRITICAL WARNING: [Vivado 12-4470] I/O Standard 'LVCMOS33' is not supported on 'xc7vx485tffg1157-1' part. [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc:78]
+Finished Parsing XDC File [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/constrs_1/new/main_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1003.723 ; gain = 1.113
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 1003.723 ; gain = 664.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 1003.723 ; gain = 664.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:19 . Memory (MB): peak = 1003.723 ; gain = 664.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.srcs/sources_1/new/operate.v:54]
+INFO: [Synth 8-5546] ROM "result_sign" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result_sign" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "result" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "outnum" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "outnum" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:23 . Memory (MB): peak = 1003.723 ; gain = 664.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     14 Bit       Adders := 5     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               14 Bit    Registers := 5     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 26    
+	   6 Input     14 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 13    
+	   2 Input      8 Bit        Muxes := 41    
+	   3 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockDivider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockDivider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module welcomeWelcome 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 23    
+	   3 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+Module increaseNum 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module operate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 11    
+Module BCD_converter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  12 Input      8 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Ckleeko1/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko1/new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko2/new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko3/new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "result_sign" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP result0, operation Mode is: A*B.
+DSP Report: operator result0 is absorbed into DSP result0.
+DSP Report: Generating DSP result0, operation Mode is: A*B.
+DSP Report: operator result0 is absorbed into DSP result0.
+INFO: [Synth 8-5545] ROM "Ckleeko1/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko1/new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko2/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko2/new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko3/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Ckleeko3/new_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design separateResult has unconnected port clock
+WARNING: [Synth 8-3331] design welcomeWelcome has unconnected port enable_master
+WARNING: [Synth 8-3331] design welcomeWelcome has unconnected port welcome_screen_switch
+WARNING: [Synth 8-3331] design welcomeWelcome has unconnected port display_result_switch
+INFO: [Synth 8-3886] merging instance 'ww/wll_reg[0]' (FDSE) to 'ww/wll_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ww/wl_reg[0]' (FDSE) to 'ww/wl_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ww/wr_reg[0]' (FDSE) to 'ww/wr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ww/wrr_reg[0]' (FDSE) to 'ww/wrr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ww/wll_reg[2]' (FDSE) to 'ww/wll_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ww/wl_reg[2]' (FDSE) to 'ww/wl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ww/wr_reg[2]' (FDSE) to 'ww/wr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ww/wrr_reg[2]' (FDSE) to 'ww/wrr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ww/wll_reg[4]' (FDSE) to 'ww/wll_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ww/wl_reg[4]' (FDSE) to 'ww/wl_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ww/wr_reg[4]' (FDSE) to 'ww/wr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ww/wrr_reg[4]' (FDSE) to 'ww/wrr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ww/wll_reg[5]' (FDSE) to 'ww/wll_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ww/wl_reg[5]' (FDSE) to 'ww/wl_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ww/wr_reg[5]' (FDSE) to 'ww/wr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ww/wrr_reg[5]' (FDSE) to 'ww/wrr_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ww/wll_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ww/wl_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ww/wr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ww/wrr_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (ww/wrr_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ww/wr_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ww/wl_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ww/wll_reg[7]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:47 . Memory (MB): peak = 1003.723 ; gain = 664.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|operate     | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|operate     | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:36 . Memory (MB): peak = 1031.734 ; gain = 692.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:36 . Memory (MB): peak = 1032.699 ; gain = 693.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:06 ; elapsed = 00:02:38 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   188|
+|3     |DSP48E1 |     2|
+|4     |LUT1    |    57|
+|5     |LUT2    |   125|
+|6     |LUT3    |   414|
+|7     |LUT4    |   105|
+|8     |LUT5    |    37|
+|9     |LUT6    |   200|
+|10    |FDRE    |   195|
+|11    |FDSE    |     4|
+|12    |IBUF    |    14|
+|13    |OBUF    |    20|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------+-----------------------------+------+
+|      |Instance          |Module                       |Cells |
++------+------------------+-----------------------------+------+
+|1     |top               |                             |  1363|
+|2     |  Ckleeko1        |clockDivider                 |    52|
+|3     |  Ckleeko2        |clockDivider__parameterized0 |    52|
+|4     |  Ckleeko3        |clockDivider__parameterized1 |    52|
+|5     |  nolabel_line123 |display                      |    29|
+|6     |  ones1           |increaseNum                  |   238|
+|7     |  ones2           |increaseNum_0                |    67|
+|8     |  op              |operate                      |   699|
+|9     |  tens1           |increaseNum_1                |    54|
+|10    |  tens2           |increaseNum_2                |    49|
+|11    |  ww              |welcomeWelcome               |    35|
++------+------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:02:42 . Memory (MB): peak = 1073.777 ; gain = 734.340
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:45 . Memory (MB): peak = 1073.777 ; gain = 221.922
+Synthesis Optimization Complete : Time (s): cpu = 00:02:10 ; elapsed = 00:02:43 . Memory (MB): peak = 1073.777 ; gain = 734.340
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 204 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 21 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:19 ; elapsed = 00:02:54 . Memory (MB): peak = 1073.777 ; gain = 746.617
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/elsha/Desktop/Vivado projects/Seimo3.0/Seimo3.0.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1073.777 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 22:29:27 2022...
